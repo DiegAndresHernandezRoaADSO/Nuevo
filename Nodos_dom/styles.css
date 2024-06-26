@@ -1,0 +1,23 @@
+*{
+    top: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.box{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(25, 151, 255);
+    color: black;
+    border-radius: 15px;
+    margin: 10px;
+    text-align: center;
+    padding: auto 8px;
+}
+
+#root{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 10;
+}
