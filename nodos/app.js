@@ -90,16 +90,5 @@ usuarios().then((listado) => {
     $catchPhras.textContent = usuario.company.catchPhras;
     $div.appendChild($catchPhras);
 
-
-
-
-
-
-
-
-
-
-
-    
     })
-  });
+});
