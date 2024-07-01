@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif
+}
+
+:root {
+    --primary-color: #e74c3c; /* Color rojo utilizado en "Expres" y el botón "Registrarse" */
+    --secondary-color: #333; /* Color oscuro para el texto y el fondo */
+    --white-color: #fff; /* Color blanco para el texto y el fondo */
+    --font-family: 'Arial', sans-serif; /* Fuente utilizada */
+    --button-background-color: #e74c3c; /* Color del botón "Registrarse" */
+    --button-hover-color: #c0392b; /* Color del botón al pasar el cursor */
+    --button-text-color: #fff; /* Color del texto en el botón */
+    --nav-height: 50px; /* Altura de la barra de navegación */
+    --nav-padding: 10px 20px; /* Padding de la barra de navegación */
+    --padding: 20px; /* Padding general */
+    --btn-hover: #c0392b; /* Color al pasar el cursor sobre el botón */
+    --tertiary-color: #000000; /* Color terciario para los enlaces de navegación */
+    --p-font: 14px; /* Tamaño de fuente para los elementos de párrafo */
+}
+
+body {
+    background-color: violet;
+}
+
+/* header section start here */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: var(--white-color);
+    color: var(--secondary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist a {
+    display: inline-block;
+    margin: 0 15px;
+    color: var(--tertiary-color);
+    font-size: var(--p-font);
+}
+
+.navlist a:hover {
+    color: var(--btn-hover);
+}
+
+.right-content {
+    display: flex;
+    align-items: center;
+}
+
+.nav-btn-primary{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid var(--tertiary-color);
+    color: var(--tertiary-colorr);
+    font-size: var(--p-font);
+    border-radius: 15px;
+}
+
+.nav-btn:hover{
+    background-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.nav-btn-secundary{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    font-size: var(--p-font);
+    border-radius: 15px;
+}
+
+.nav-btn:hover{
+    background-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+
+#menu-icon{
+    font-size: 42px;
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+
+
+
+
+/* ----------------- */
+.contenedor{
+    background: url(./Fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor h1{
+    font-size: 50px;
+}
+
+.cuadro-negro{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.boton{
+    margin-top: 30px;
+}
+
+.boton{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+}
+
+.boton:hover{
+    background-color:#000000 ;
+}
+
+.cuadro-negro{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+
+
+  /* segunda seccion */
+
+.segunda-seccion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f1bdce;
+    padding: 20px 10%;
+
+
+}
+
+.image-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.image-container img {
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+.texto-contenedor {
+    flex: 1;
+    text-align: center;
+}
+
+.texto-contenedor h1 {
+    color: #C31952;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.texto-contenedor p {
+    color: #C31952;
+    font-size:  20px;;
+    margin-bottom: 20px;
+}
+
+.texto-contenedor button {
+    background-color: #FF0000; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.texto-contenedor button:hover {
+    background-color:#D40000 ;
+}
+
+  /* seccion-tercera */
+
+.tercera-seccion{
+    background-color:#6CAC4F;
+    text-align: center;
+    padding: 110px 15%; 
+}
+
+.tercera-seccion h1{
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.tercera-seccion p{
+    color: #FFFFFF;
+}
+
+.tercera-seccion-img{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.tercera-seccion-img img{
+    margin: 30px;
+    max-width: 200px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.tercera-seccion-boton{
+    margin-top: 30px;
+}
+.tercera-seccion button {
+    background-color: #FF0000; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.tercera-seccion button:hover {
+    background-color: #CC0000;
+}
+
+/* cuarta seccion */
+
+
+
+.container {
+    display: flex;
+    background-color: white;
+}
+
+.image-section {
+    flex: 1;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-section {
+    flex: 1;
+    padding: 40px;
+    background-color: #FFE2EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text-section h1 {
+    color: #C32F00;
+    margin-bottom: 20px;
+}
+
+.text-section p {
+    margin-bottom: 30px;
+    color: #CF2F00;
+}
+
+.text-section button {
+    background-color: #E60023;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.text-section button:hover {
+    background-color:#D40000 ;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #c44a47; /* Matching the red color from the image */
+    padding: 5%; 
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.footer-container a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
